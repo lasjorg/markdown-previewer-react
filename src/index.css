@@ -1,14 +1,24 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@media (max-width: 61.25em) {
+  .App {
+    flex-direction: column;
+  }
+}
+
+.editor {
+  flex-basis: 45%;
+  margin-right: 2rem;
+  resize: none;
+  min-height: 40%;
+  height: 95%;
+}
+
+.preview {
+  flex-basis: 55%;
 }
