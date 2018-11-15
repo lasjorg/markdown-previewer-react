@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
 import marked from 'marked';
+import 'highlight.js/styles/github.css';
 
 marked.setOptions({
-  breaks: true
+  breaks: true,
+  highlight: function(code) {
+    return require('highlight.js').highlightAuto(code).value;
+  }
 });
 
 const renderer = new marked.Renderer();
