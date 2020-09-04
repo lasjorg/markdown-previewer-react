@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "highlight.js": "^9.13.1",
-    "marked": "^0.6.1",
+    "marked": "^0.7.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-html-parser": "^2.0.2",
